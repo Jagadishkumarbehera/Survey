@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="Form.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 id="title">
+                Survey form WEBNETIC
+            </h1>
+            <p class="description">
+                Thanks for using WEBNETIC! This 3 minute survey helps us to improve our services.Your answers are anonymous;data will be used only to improve our website. Required fields are marked with an *.These questions are optional and will help us understand our users better.
+            </p>
+        </header>
+        <form action="" class="survey">
+            <div class="form-group">
+                <label for="name">
+                    Name
+                    <input type="text" name="name" id="name" class="formControl" placeholder="Enter your name" required>
+                </label>
+            </div>
+            <div class="form-group">
+                <label for="email">
+                    Email
+                    <input type="email" name="email" id="email" class="formControl" placeholder="Enter your email" required>
+                </label>
+            </div>
+            <div class="form-group">
+                <label for="phone">
+                    Phone Number
+                    <input type="phone" name="phone" id="phone" class="formControl" placeholder="Enter your phone number" required>
+                </label>
+            </div>
+            <div class="form-group">
+                <label for="address">
+                    Address
+                    <input type="address" name="address" id="address" class="formControl" placeholder="Enter your address" required>
+                </label>
+            </div>
+            <div class="form-group">
+                <label>
+                    <p id="quest">
+                        Which option best describe your current role ?
+                    </p>
+                    <select name="role" 
+                        id="droupdown"
+                        class="formControl" required>
+                    <option value="" disabled selected>
+                       Select Current Role
+                    </option>
+                    <option value="student">
+                       Student
+                    </option>
+                    <option value="trainer">
+                       Trainer
+                    </option>
+                    <option value="management">
+                       Management
+                    </option>
+                    <option value="other">
+                       Other
+                    </option>
+                    </select>   
+                </label>
+            </div>
+            <div class="form-group">
+                <p id="quest">
+                    How you come to know about WEBNETIC ?
+                </p>
+                <label for="">
+                    <input type="radio" name="source" value="friends"
+                    class="inputradio">
+                    Friends
+                </label>
+                <label for="">
+                    <input type="radio" name="source" value="tv-ads"
+                    class="inputradio">
+                    Tv-Ads
+                </label>
+                <label for="">
+                    <input type="radio" name="source" value="socialmedia"
+                    class="inputradio">
+                    Social Media
+                </label>
+                <label for="">
+                    <input type="radio" name="source" value="newspapers"
+                    class="inputradio">
+                    Newspapaers
+                </label>
+                <label for="">
+                    <input type="radio" name="source" value="others"
+                    class="inputradio">
+                    Others
+                </label>
+            </div>
+            <div class="form-group">
+                <p id="quest">
+                    Which feature do you value & improved the most in WEBNETIC ?
+                </p>
+                <label for="">
+                    <input type="checkbox" name="prefer" value="back-end-dev"
+                    class="checkbox">
+                    Back-End Developer
+                </label>
+                <label for="">
+                    <input type="checkbox" name="prefer" value="front-end-dev"
+                    class="checkbox">
+                    Fornt-End Developer
+                </label>
+                <label for="">
+                    <input type="checkbox" name="prefer" value="app-dev"
+                    class="checkbox">
+                    Android-App Developer
+                </label>
+                <label for="">
+                    <input type="checkbox" name="prefer" value="soft-engineerinf"
+                    class="checkbox">
+                    Software Engineering
+                </label>
+                <label for="">
+                    <input type="checkbox" name="prefer" value="ui-ux-dev"
+                    class="checkbox">
+                    UI/UX Developer
+                </label>
+                <label for="">
+                    <input type="checkbox" name="prefer" value="other"
+                    class="checkbox">
+                    Other
+                </label>
+            </div>
+            <div class="form-group">
+                <p id="quest">
+                    Give us your Feedback
+                </p>
+                <textarea name="feedback"
+                id="feedback" cols="27"
+                rows="5" class="textarea"
+                placeholder="Enter your feedback here..."></textarea>
+            </div>
+            <div class="form-group">
+                <button type="sumbit"
+                id="submit">Submit
+            </button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
